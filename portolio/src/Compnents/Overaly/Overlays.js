@@ -3,12 +3,8 @@ import "./OverlayStyle.css";
 import { gsap, Expo, Power2, Power1 } from "gsap";
 import { SlSocialLinkedin, SlSocialGithub } from "react-icons/sl";
 import { CiMail } from "react-icons/ci";
-const Overlays = () => {
-  const openProfile = () => {
-    gsap.to(".top-overlay", { y: "-100%", duration: 0.8 });
-    gsap.to(".bottom-overlay", { y: "100%", duration: 0.8 });
-  };
 
+const Overlays = () => {
   useEffect(() => {
     gsap.fromTo(
       ".top-overlay",
@@ -22,11 +18,29 @@ const Overlays = () => {
     );
   }, []);
 
+  const openProfile = () => {
+    gsap.to(".open-button", { x: "100vw", duration: 3 });
+    gsap.to(".top-overlay", { y: "-100%", duration: 1, delay: 1 });
+    gsap.to(".bottom-overlay", { y: "100%", duration: 1, delay: 1 });
+    gsap.to(".overlay-container", { duration: 1, display: "none", delay: 1 });
+  };
+
+  const scaleButton = () => {
+    console.log("scaling");
+    gsap.to(".open-button", { scale: 2 });
+  };
+
   return (
     <div className="overlay-container">
       <div className="overlay top-overlay">
         <span className="top-overlay-header"> Hello, </span>
-        <button onClick={openProfile}>Open Profile</button>
+        <button
+          className="open-button"
+          onMouseDown={scaleButton}
+          onClick={openProfile}
+        >
+          Open
+        </button>
         <span className="top-overlay-header">There</span>
       </div>
 
@@ -53,8 +67,6 @@ const Overlays = () => {
             </a>
           </div>
         </div>
-
-        <button>Open Profle</button>
       </div>
     </div>
   );

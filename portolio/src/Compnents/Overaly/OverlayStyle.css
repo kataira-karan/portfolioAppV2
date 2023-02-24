@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 .overlay-container{
+    position: fixed;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -12,7 +13,7 @@
 .top-overlay{
     position: absolute;
     top:0;
-    height: 49%;
+    height: 50%;
     width: 100%;
     background-color: black;
     display: flex;
@@ -30,14 +31,16 @@
 .top-overlay-header{
     letter-spacing: 0.4rem;
     font-family: 'Mukta', sans-serif;
-    font-size: 19.42vmin;
     font-weight: bold;
-    color : #080f18;
+    /* color : #080f18; */
+    color: white;
+    font-size: var(--fs-landingPage-xl); 
+    /* font-size:clamp(6rem , 10rem , 15rem) ; */
     opacity: 0.6;
     font-family: 'Abril Fatface', cursive;
 }
 .top-overlay-header::first-letter{
-    font-size:39.42vmin;
+    font-size: var(--fs-landingPage-firstLetter ) ;
 }
 
 .bottom-overlay{
@@ -50,6 +53,7 @@
     height: 49%;
     background-image: linear-gradient(to bottom, #000000, #030303, #070707, #0a0a0a, #0d0d0d);
     width: 100%;
+    z-index: -1;
 }
 
 .overlay-bottom-content{
@@ -84,4 +88,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.open-button{
+    position: absolute;
+    bottom: -26px;
+    padding:1rem;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    z-index: 99;
+}
+
+@media screen and (max-width : 700px){
+
+   
+    .top-overlay{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        z-index: 33;
+        justify-content: center;
+        background-color: red;
+    }
+
 }
