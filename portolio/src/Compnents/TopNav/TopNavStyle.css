@@ -1,0 +1,27 @@
+.top-nav-container{
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    color : wheat;
+    font-family: var(--logo-font);
+    font-weight: bold;
+    
+}
+
+.nav-logo{
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.ham{
+    color: wheat;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+}

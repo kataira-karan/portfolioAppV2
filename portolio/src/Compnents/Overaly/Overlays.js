@@ -3,8 +3,11 @@ import "./OverlayStyle.css";
 import { gsap, Expo, Power2, Power1 } from "gsap";
 import { SlSocialLinkedin, SlSocialGithub } from "react-icons/sl";
 import { CiMail } from "react-icons/ci";
+import { useHistory } from "react-router-dom";
 
 const Overlays = () => {
+  const history = useHistory();
+
   useEffect(() => {
     gsap.fromTo(
       ".top-overlay",
@@ -23,6 +26,8 @@ const Overlays = () => {
     gsap.to(".top-overlay", { y: "-100%", duration: 1, delay: 1 });
     gsap.to(".bottom-overlay", { y: "100%", duration: 1, delay: 1 });
     gsap.to(".overlay-container", { duration: 1, display: "none", delay: 1 });
+
+    history.push("/home");
   };
 
   const scaleButton = () => {
