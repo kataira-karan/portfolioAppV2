@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import Overlays from "../Overaly/Overlays";
+import TopNav from "../TopNav/TopNav";
 import "./HomeStyle.css";
 import { gsap } from "gsap";
 import { Timeline } from "gsap/gsap-core";
@@ -77,6 +78,10 @@ const Home = () => {
   return (
     <>
       <div className="home-container">
+        <div className="top-nav">
+          <TopNav isMobile={true}></TopNav>
+          <button>Open</button>
+        </div>
         <div className="about-me-section">
           <div className="about-me-image-container">
             <img className="about-me-image" src={karan1}></img>
