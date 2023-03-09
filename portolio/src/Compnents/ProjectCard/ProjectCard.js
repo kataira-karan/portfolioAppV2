@@ -1,9 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ProjectCardStyle.css";
 
 const ProjectCard = (props) => {
   const { imgSrc, projectName } = props;
-
   //   const openOverlay = (e) => {
   //     console.log(e.target);
   //     console.log("hovering");
@@ -26,7 +26,11 @@ const ProjectCard = (props) => {
         </span> */}
 
         <span className="project-technologies"> React | NodeJS </span>
-        <span> Code || Live || Casestudy </span>
+        <span>
+          {" "}
+          Code || Live ||{" "}
+          <Link to={`${projectName}/casestudy`}> Casestudy </Link>{" "}
+        </span>
       </div>
       <div className="project-card-image-container">
         <img className="project-card-image" src={imgSrc}></img>

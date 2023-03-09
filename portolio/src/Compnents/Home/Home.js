@@ -42,11 +42,6 @@ const Home = () => {
     }, 3000);
   };
 
-  const openNavigation = () => {
-    console.log("opening");
-    gsap.to(".navigation-section", { right: 0 });
-  };
-
   const closeMobileMenu = () => {
     gsap.to(".navigation-section", { right: "-100%" });
   };
@@ -89,7 +84,7 @@ const Home = () => {
     <>
       <div className="home-container">
         <div className="top-nav">
-          <TopNav isMobile={true} openMobileMenu={openNavigation}></TopNav>
+          <TopNav></TopNav>
           {/* <button onClick={openNavigation}>Open</button> */}
         </div>
         <div className="about-me-section">
@@ -115,19 +110,23 @@ const Home = () => {
           </span>
 
           <ul className="navigation">
-            <span onClick={(e) => navigateSite(e)}>
+            <span onClick={(e) => navigateSite(e, "aboutme")}>
               {" "}
               <li className="navigation-link"> About Me </li>{" "}
             </span>
-            <span onClick={(e) => navigateSite(e)}>
+            <span onClick={(e) => navigateSite(e, "projects")}>
               {" "}
               <li className="navigation-link"> Projects </li>
             </span>
-            <span onClick={(e) => navigateSite(e)}>
+            <span onClick={(e) => navigateSite(e, "skills")}>
               {" "}
               <li className="navigation-link"> Skills </li>
             </span>
-            <span onClick={(e) => navigateSite(e)}>
+            <span onClick={(e) => navigateSite(e, "blogs")}>
+              {" "}
+              <li className="navigation-link"> Blogs </li>
+            </span>
+            <span onClick={(e) => navigateSite(e, "connect")}>
               {" "}
               <li className="navigation-link"> Contact </li>
             </span>

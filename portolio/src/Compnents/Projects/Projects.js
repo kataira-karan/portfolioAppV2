@@ -17,7 +17,7 @@ const Projects = () => {
 
   return (
     <>
-      <TopNav></TopNav>
+      <TopNav> </TopNav>
       <div className="projects-container">
         <header className="project-container-header"> Some Of My Work</header>
 
