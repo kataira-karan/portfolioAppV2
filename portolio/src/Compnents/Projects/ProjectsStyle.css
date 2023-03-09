@@ -8,7 +8,7 @@
     justify-content: start;
     align-items: center;
     background-color: wheat;
-    height: 85vh;
+    min-height: 85vh;
 }
 
 .projects{
@@ -30,10 +30,12 @@
 }
 
 
-@media screen and ( max-width:800px) {
+@media screen and ( max-width:900px) {
 
     .projects-container{
+        flex-direction: column;
         padding-inline: 2rem ;
+        height: auto;
     }
     
 }
