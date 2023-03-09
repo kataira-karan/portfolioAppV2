@@ -43,7 +43,7 @@
     position: relative;
     background-color:antiquewhite;
 }
-
+    
 
 
 /* navigation start */
@@ -68,7 +68,9 @@
     display: none;
 }
 
-
+.menu-close-butto{
+    display: none;
+}
     
 /* navigation end */
 
@@ -91,9 +93,18 @@
         width: 100%;
         position: absolute;
         top:0;
-        transform: translateX(100%);
         right: -100%;
+        z-index: 2;
     }
+
+    .menu-close-button{
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+    }
+
+
 
    
 }

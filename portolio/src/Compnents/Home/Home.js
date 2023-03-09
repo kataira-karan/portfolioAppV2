@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import Overlays from "../Overaly/Overlays";
 import TopNav from "../TopNav/TopNav";
 import "./HomeStyle.css";
+import { AiOutlineClose } from "react-icons/ai";
 import { gsap } from "gsap";
 import { Timeline } from "gsap/gsap-core";
 import { Link } from "react-router-dom";
@@ -39,6 +40,15 @@ const Home = () => {
     setTimeout(() => {
       history.push("/home/projects");
     }, 3000);
+  };
+
+  const openNavigation = () => {
+    console.log("opening");
+    gsap.to(".navigation-section", { right: 0 });
+  };
+
+  const closeMobileMenu = () => {
+    gsap.to(".navigation-section", { right: "-100%" });
   };
 
   useEffect(() => {
@@ -79,8 +89,8 @@ const Home = () => {
     <>
       <div className="home-container">
         <div className="top-nav">
-          <TopNav isMobile={true}></TopNav>
-          <button>Open</button>
+          <TopNav isMobile={true} openMobileMenu={openNavigation}></TopNav>
+          {/* <button onClick={openNavigation}>Open</button> */}
         </div>
         <div className="about-me-section">
           <div className="about-me-image-container">
@@ -100,6 +110,10 @@ const Home = () => {
         </div>
 
         <div className="navigation-section">
+          <span className="menu-close-button">
+            <AiOutlineClose onClick={closeMobileMenu}></AiOutlineClose>
+          </span>
+
           <ul className="navigation">
             <span onClick={(e) => navigateSite(e)}>
               {" "}

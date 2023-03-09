@@ -8,7 +8,7 @@ import { GrClose } from "react-icons/gr";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const TopNav = (props) => {
-  const { isMobile } = props;
+  const { isMobile, openMobileMenu } = props;
 
   const history = useHistory();
   const openMenu = (e) => {
@@ -17,9 +17,9 @@ const TopNav = (props) => {
     history.push("/");
   };
 
-  const openMobileMenu = () => {
-    gsap.to(".mobile-menu", { x: 0, duration: 1 });
-  };
+  // const openMobileMenu = () => {
+  //   gsap.to(".mobile-menu", { x: 0, duration: 1 });
+  // };
 
   return (
     <div className="top-nav-container">
