@@ -41,7 +41,7 @@
     width: 50%;
     height: 100%;
     position: relative;
-    background-color:antiquewhite;
+    background-color:var(--primaryColor)    ;
 }
     
 

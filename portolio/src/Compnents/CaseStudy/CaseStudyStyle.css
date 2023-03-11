@@ -1,0 +1,96 @@
+.case-study-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: rgb(204,243,129);
+    padding:5rem 15rem
+}
+
+.case-study-header{
+    display: flex;
+    max-height: 60%;
+
+}
+
+.project-description{
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+}
+
+.case-study-carousel{
+    width: 60%;
+
+}
+
+.case-study-divider{
+    margin-block: 2rem;
+}
+
+.case-study-img{
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.work-together{
+    display: flex;
+    width: 100%;
+}
+
+.work-together-form{
+    width: 60%;
+}
+
+@media screen and (max-width : 900px) {
+
+    .case-study-carousel{
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+        
+    }
+
+    .case-study-img{
+        height: 30vh;
+
+    }
+
+    .case-study-container{
+        padding: 4rem 4rem;
+    }
+
+    .case-study-header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .project-info{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-together{
+        flex-direction: column;
+        font-family: 'Fredoka One', cursive;
+        color:#031C82;
+
+    }
+
+}
+
+input{
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 
 *{
     margin: 0;
@@ -16,7 +18,11 @@
     /* font familiy */
     --fm-domine : 'Domine', serif;
     --logo-font : 'Satisfy', cursive;
-}
+
+    /* colors */
+    --primaryColor :  rgb(204,243,129);
+    --primaryBlue : rgb(72,49,212)
+}   
 
 .App{
     overflow: hidden;

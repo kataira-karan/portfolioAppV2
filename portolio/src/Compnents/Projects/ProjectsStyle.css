@@ -2,18 +2,22 @@
     width: 100vw;
     padding-top: 5rem;
     padding-inline: 10rem;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: start;
     align-items: center;
-    background-color: wheat;
+    background-color:white;
     min-height: 85vh;
 }
 
 .projects{
     margin-top: 2rem;
     width: 80vw;
+    padding: 2rem;
+    border-radius: 5px;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));;
