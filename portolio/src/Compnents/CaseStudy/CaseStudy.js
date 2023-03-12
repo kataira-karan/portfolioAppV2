@@ -4,6 +4,8 @@ import TopNav from "../TopNav/TopNav";
 import "./CaseStudyStyle.css";
 import { Carousel } from "react-responsive-carousel";
 import Header from "../Header/Header";
+import { VscLiveShare } from "react-icons/vsc";
+import { GoMarkGithub } from "react-icons/go";
 
 const CaseStudy = () => {
   return (
@@ -11,26 +13,31 @@ const CaseStudy = () => {
       <TopNav></TopNav>
       <div className="case-study-container">
         <div className="case-study-header">
-          <div className="case-study-carousel">
-            <img
-              className="case-study-img"
-              src="https://images.pexels.com/photos/14773255/pexels-photo-14773255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            ></img>
-          </div>
-
           <div className="project-info">
             <Header
               text="Project Name"
               fontSize="2rem"
               fontColor="#031C82"
               fontWeight="bold"
-              fontFamily="Courier New, Courier, monospace"
             ></Header>
-            <span className="project-techs"> React || Node || Mongo </span>
             <div className="project-links">
-              <span> Git </span>
-              <span> Live </span>
+              {/* <span className="project-techs"> React || Node || Mongo </span> */}
+
+              <span>
+                {" "}
+                <GoMarkGithub className="project-link"></GoMarkGithub>{" "}
+              </span>
+              <span>
+                {" "}
+                <VscLiveShare className="project-link"> </VscLiveShare>{" "}
+              </span>
             </div>
+          </div>
+          <div className="case-study-carousel">
+            <img
+              className="case-study-img"
+              src="https://images.pexels.com/photos/15760049/pexels-photo-15760049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            ></img>
           </div>
         </div>
 

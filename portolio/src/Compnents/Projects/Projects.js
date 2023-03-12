@@ -3,6 +3,7 @@ import TopNav from "../TopNav/TopNav";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import "./ProjectsStyle.css";
 import { gsap } from "gsap";
+import projects from "../../data/projects.json";
 
 const Projects = () => {
   useEffect(() => {
@@ -22,12 +23,17 @@ const Projects = () => {
         <header className="project-container-header"> Some Of My Work</header>
 
         <div className="projects">
-          <ProjectCard
-            className="project"
-            projectName="Personalized Spotify"
-            imgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png"
-          ></ProjectCard>
-          <ProjectCard
+          {projects.map((project) => {
+            return (
+              <ProjectCard
+                className="project"
+                projectName={project.name}
+                imgSrc={project.logo}
+              ></ProjectCard>
+            );
+          })}
+
+          {/* <ProjectCard
             className="project"
             projectName="Ecom Marketplace"
             imgSrc="https://www.pngitem.com/pimgs/m/529-5295750_facebook-marketplace-01-marketplace-facebook-logo-png-transparent.png"
@@ -42,7 +48,7 @@ const Projects = () => {
             projectName="PortfolioV2"
             imgSrc="https://cdn.dribbble.com/users/3912043/screenshots/16016566/media/2202673b9f11f904feaf0298ef5d67fd.jpg?compress=1&resize=400x300"
           ></ProjectCard>
-          <ProjectCard></ProjectCard>
+          <ProjectCard></ProjectCard> */}
         </div>
       </div>
     </>

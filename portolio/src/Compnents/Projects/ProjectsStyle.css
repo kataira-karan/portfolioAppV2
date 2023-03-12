@@ -2,13 +2,12 @@
     width: 100vw;
     padding-top: 5rem;
     padding-inline: 10rem;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+     background-color: #F5F4FC;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: start;
     align-items: center;
-    background-color:white;
     min-height: 85vh;
 }
 

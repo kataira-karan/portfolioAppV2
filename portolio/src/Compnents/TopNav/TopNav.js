@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import "./TopNavStyle.css";
 import { gsap } from "gsap";
-import { Power4 } from "gsap";
+import { Power4, Power2 } from "gsap";
 import { GrClose } from "react-icons/gr";
 
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Timeline } from "gsap/gsap-core";
 
 const TopNav = (props) => {
   const { isMobile, openMobileMenu } = props;
@@ -17,24 +18,33 @@ const TopNav = (props) => {
   };
 
   const openDesktopNavigation = () => {
+    let t = new Timeline();
     let mql = window.matchMedia("(max-width: 900px)");
     console.log(mql);
     if (mql.matches) {
-      gsap.to(".mobile-menu", {
+      t.to(".mobile-menu", {
         display: "flex",
         width: "100vw",
         height: "100vh",
         duration: 0.5,
         ease: Power4.easeInOut,
-      });
+      }).fromTo(
+        ".mobile-menu-link",
+        { y: "100% ", opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, stagger: 0.2, ease: Power2.easeInOut }
+      );
     } else {
-      gsap.to(".mobile-menu", {
+      t.to(".mobile-menu", {
         display: "flex",
         width: "20rem",
         ease: Power4.easeInOut,
         height: "20rem",
         duration: 0.5,
-      });
+      }).fromTo(
+        ".mobile-menu-link",
+        { y: "100% ", opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, stagger: 0.2, ease: Power2.easeInOut }
+      );
     }
   };
 
@@ -61,7 +71,10 @@ const TopNav = (props) => {
 
   return (
     <div className="top-nav-container">
-      <span className="nav-logo"> KK </span>
+      <span className="nav-logo">
+        {" "}
+        <Link to="/home">KK</Link>{" "}
+      </span>
 
       {isMobile ? (
         <GiHamburgerMenu onClick={openMobileMenu}></GiHamburgerMenu>
@@ -87,6 +100,12 @@ const TopNav = (props) => {
           {" "}
           <Link to="/home/connect"> Contact </Link>
         </li>
+        <li className="mobile-menu-link socials">
+          <span> IG </span>
+          <span> LN </span>
+          <span> GH </span>
+        </li>
+        <li className="mobile-menu-link">Karankatariac22@gmail.com</li>
       </ul>
     </div>
   );
