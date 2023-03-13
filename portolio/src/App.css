@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 *{
     margin: 0;
@@ -20,10 +20,13 @@
     /* font familiy */
     --fm-domine : 'Domine', serif;
     --logo-font : 'Satisfy', cursive;
+    --headerFont: 'Libre Baskerville', serif;  
 
     /* colors */
     --primaryColor :  rgb(204,243,129);
     --primaryBlue : rgb(72,49,212)
+
+    
 }   
 
 .App{

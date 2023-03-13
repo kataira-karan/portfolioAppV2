@@ -58,9 +58,7 @@ const TopNav = (props) => {
     });
   };
 
-  useEffect(() => {
-    console.log(isMobile);
-  }, []);
+  useEffect(() => {}, []);
 
   const history = useHistory();
   const openMenu = (e) => {

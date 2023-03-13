@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100vw;
     background-color: #F5F4FC;
-    padding:5rem 15rem;
+    padding:2rem 15rem;
 
 }
 
@@ -36,6 +36,7 @@
 
 .case-study-carousel{
     width: 830px;
+    text-align: center;
 
 }
 

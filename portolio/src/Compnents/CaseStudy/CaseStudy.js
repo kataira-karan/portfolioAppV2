@@ -1,58 +1,101 @@
-import React from "react";
+import { React, useEffect, useState } from "react";
 import ComingSoon from "../ComingSoon/ComingSoon";
 import TopNav from "../TopNav/TopNav";
 import "./CaseStudyStyle.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { useHistory, useLocation, useParams } from "react-router-dom";
 import Header from "../Header/Header";
 import { VscLiveShare } from "react-icons/vsc";
 import { GoMarkGithub } from "react-icons/go";
+import projects from "../../data/projects.json";
+import { Link } from "react-router-dom";
 
 const CaseStudy = () => {
+  const [project, setproject] = useState(null);
+
+  const params = useParams();
+  console.log(params);
+
+  useEffect(() => {
+    let currentProject = projects.filter((project) => {
+      console.log(project);
+      return project.name === params.projectName;
+    });
+    setproject(currentProject[0]);
+    console.log(currentProject);
+    console.log(project);
+  }, []);
+
   return (
     <>
       <TopNav></TopNav>
       <div className="case-study-container">
-        <div className="case-study-header">
-          <div className="project-info">
-            <Header
-              text="Project Name"
-              fontSize="2rem"
-              fontColor="#031C82"
-              fontWeight="bold"
-            ></Header>
-            <div className="project-links">
-              {/* <span className="project-techs"> React || Node || Mongo </span> */}
+        {project ? (
+          <>
+            {" "}
+            <div className="case-study-header">
+              <div className="project-info">
+                <Header
+                  text={project.name}
+                  fontSize="2rem"
+                  fontColor="#3D155F"
+                  fontWeight="bold"
+                ></Header>
+                <div className="project-links">
+                  {/* <span className="project-techs"> React || Node || Mongo </span> */}
 
-              <span>
-                {" "}
-                <GoMarkGithub className="project-link"></GoMarkGithub>{" "}
-              </span>
-              <span>
-                {" "}
-                <VscLiveShare className="project-link"> </VscLiveShare>{" "}
-              </span>
+                  <span>
+                    {" "}
+                    <a target="_blank" href={project.githubLink}>
+                      <GoMarkGithub className="project-link"></GoMarkGithub>{" "}
+                    </a>
+                  </span>
+                  <span>
+                    {" "}
+                    <VscLiveShare className="project-link"> </VscLiveShare>{" "}
+                  </span>
+                </div>
+              </div>
+              <div className="case-study-carousel">
+                {/* <img
+                  className="case-study-img"
+                  src={require(`./images/${project.image}`)}
+                ></img> */}
+                <Carousel>
+                  {project.images.map((img) => {
+                    return (
+                      <div>
+                        <img
+                          className="case-study-img"
+                          src={require(`./images/${img}`)}
+                        ></img>
+                      </div>
+                    );
+                  })}
+
+                  {/* <div>
+                    <img
+                      className="case-study-img"
+                      src={require(`./images/${project.image}`)}
+                    ></img>
+                  </div>
+                  <div>
+                    <img
+                      className="case-study-img"
+                      src={require(`./images/${project.image}`)}
+                    ></img>
+                  </div> */}
+                </Carousel>
+              </div>
             </div>
-          </div>
-          <div className="case-study-carousel">
-            <img
-              className="case-study-img"
-              src="https://images.pexels.com/photos/15760049/pexels-photo-15760049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            ></img>
-          </div>
-        </div>
-
-        <hr className="case-study-divider"></hr>
-
-        <div className="project-description">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
-        </div>
-
-        <hr className="case-study-divider"></hr>
+            <hr className="case-study-divider"></hr>
+            <div className="project-description">{project.description}</div>
+            <hr className="case-study-divider"></hr>{" "}
+          </>
+        ) : (
+          "Loading"
+        )}
 
         {/* <div className="work-together">
           <div className="work-together-tagline">

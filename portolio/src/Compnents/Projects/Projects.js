@@ -12,8 +12,6 @@ const Projects = () => {
       { y: "100%", opacity: 0 },
       { y: 0, duration: 1, stagger: 0.2, opacity: 1 }
     );
-
-    console.log("project page");
   }, []);
 
   return (
@@ -27,6 +25,7 @@ const Projects = () => {
             return (
               <ProjectCard
                 className="project"
+                project={project}
                 projectName={project.name}
                 imgSrc={project.logo}
               ></ProjectCard>

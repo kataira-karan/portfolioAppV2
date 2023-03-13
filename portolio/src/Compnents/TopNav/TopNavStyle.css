@@ -2,6 +2,7 @@
     height: 15vh;
     /* background-color:var(--primaryBlue  ); */
     display: flex;
+    background-color: #F5F4FC;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 4rem;

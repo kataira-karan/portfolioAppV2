@@ -13,12 +13,12 @@ const Header = (props) => {
   } = props;
 
   const headerStyle = {
-    fontFamily: fontFamily ? fontFamily : null,
+    fontFamily: fontFamily ? fontFamily : "'Libre Baskerville', serif",
     textAlign: textAlign ? textAlign : null,
     display: "block",
     fontSize: fontSize ? fontSize : "1rem",
     fontWeight: fontWeight ? fontWeight : 100,
-    fontColor: fontColor ? fontColor : "black",
+    color: fontColor ? fontColor : "black",
     padding: padding ? padding : 0,
     margin: margin ? margin : 0,
   };

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./ProjectCardStyle.css";
 
 const ProjectCard = (props) => {
-  const { imgSrc, projectName } = props;
+  const { imgSrc, projectName, project } = props;
 
   return (
     <div className="project-card">

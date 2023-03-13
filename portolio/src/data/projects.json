@@ -4,29 +4,37 @@
             "id" : 1,
             "name": "Personalized Spotify",
             "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png",
-            "githubLink" : "",
-            "liveLink" : ""
+            "images" : ["spotify.PNG" , "spotify.PNG" ,  "spotify.PNG"   ],
+            "githubLink" : "https://github.com/kataira-karan/personalized_spotify",
+            "liveLink" : "https://github.com/kataira-karan/personalized_spotify",
+            "description" :  "API integration is an imperative part of any website design. The bigger the website the complex the logic behind API is. To learn more about this I created this web app with an integration of Spotify's Web API. I have also used it's Oauth System to give authorization to the user account. The authentication token is refresh every hour to secure the account. User can see playlist, top songs of last week,last month and last 6 months. User can see singer's details and also song's details. Check out songs in the singer's album. To build this web applicaiton I have used ReactJs And NodeJS. "
         },
         {
             "id" : 2,
             "name": "Ecom Marketplace",
+            "images" : ["mp1.png" , "mp2.png" ,"mp3.png","mp4.png"   ],
             "logo" : "https://www.pngitem.com/pimgs/m/529-5295750_facebook-marketplace-01-marketplace-facebook-logo-png-transparent.png",
-            "githubLink" : "",
-            "liveLink" : ""
+            "githubLink" : "https://github.com/kataira-karan/marketplace",
+            "liveLink" : "",
+            "description" :  "API integration is an imperative part of any website design. The bigger the website the complex the logic behind API is. To learn more about this I created this web app with an integration of Spotify's Web API. I have also used it's Oauth System to give authorization to the user account. The authentication token is refresh every hour to secure the account. User can see playlist, top songs of last week,last month and last 6 months. User can see singer's details and also song's details. Check out songs in the singer's album. To build this web applicaiton I have used ReactJs And NodeJS. "
         },
         {
             "id" : 3,
             "name": "PortfolioV1.0",
+            "images" : ["spotify.PNG" , "spotify.PNG" ,  "spotify.PNG"   ],
             "logo" : "https://cdn.dribbble.com/users/3912043/screenshots/16016566/media/2202673b9f11f904feaf0298ef5d67fd.jpg?compress=1&resize=400x300  ",
             "githubLink" : "https://cdn.dribbble.com/users/3912043/screenshots/16016566/media/2202673b9f11f904feaf0298ef5d67fd.jpg?compress=1&resize=400x300",
-            "liveLink" : ""
+            "liveLink" : "",
+            "description" :  "API integration is an imperative part of any website design. The bigger the website the complex the logic behind API is. To learn more about this I created this web app with an integration of Spotify's Web API. I have also used it's Oauth System to give authorization to the user account. The authentication token is refresh every hour to secure the account. User can see playlist, top songs of last week,last month and last 6 months. User can see singer's details and also song's details. Check out songs in the singer's album. To build this web applicaiton I have used ReactJs And NodeJS. "
         },
         {
             "id" : 4,
             "name": "PortfolioV2.0",
+            "images" : ["spotify.PNG" , "spotify.PNG" ,  "spotify.PNG"   ],
             "logo" : "https://cdn.dribbble.com/users/3912043/screenshots/16016566/media/2202673b9f11f904feaf0298ef5d67fd.jpg?compress=1&resize=400x300",
             "githubLink" : "",
-            "liveLink" : ""
+            "liveLink" : "",
+            "description" :  "API integration is an imperative part of any website design. The bigger the website the complex the logic behind API is. To learn more about this I created this web app with an integration of Spotify's Web API. I have also used it's Oauth System to give authorization to the user account. The authentication token is refresh every hour to secure the account. User can see playlist, top songs of last week,last month and last 6 months. User can see singer's details and also song's details. Check out songs in the singer's album. To build this web applicaiton I have used ReactJs And NodeJS. "
         }
 
     ]
