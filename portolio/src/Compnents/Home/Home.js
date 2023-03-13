@@ -3,7 +3,7 @@ import Overlays from "../Overaly/Overlays";
 import TopNav from "../TopNav/TopNav";
 import "./HomeStyle.css";
 import { AiOutlineClose } from "react-icons/ai";
-import { gsap } from "gsap";
+import { gsap, Power0, Power2, Power4 } from "gsap";
 import { Timeline } from "gsap/gsap-core";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
@@ -14,8 +14,6 @@ const Home = () => {
 
   const navigateSite = (e) => {
     const t = new Timeline();
-    console.log("NAvingatin");
-    console.log(e.target);
     e.target.classList.remove("navigation-link");
     e.target.classList.add("navigation-link-active");
 
@@ -47,20 +45,19 @@ const Home = () => {
   };
 
   useEffect(() => {
-    console.log("Home");
     const t = new Timeline();
 
     t.add("start")
       .fromTo(
         ".about-me-section",
         { x: "-100%" },
-        { x: 0, duration: 2, delay: 2 },
+        { x: 0, duration: 2, delay: 2, ease: Power4.easeInOut },
         "start"
       )
       .fromTo(
         ".navigation-section",
         { x: "100%" },
-        { x: 0, duration: 2, delay: 2 },
+        { x: 0, duration: 2, delay: 2, ease: Power4.easeInOut },
         "start"
       )
       .fromTo(
@@ -93,14 +90,12 @@ const Home = () => {
           </div>
 
           <div className="about-me">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with deskto
+            I am Karan Kataria, I'm a front-end Developer based in
+            Ontario,Canda.I have recenlty gradudated from Conestoga College.I
+            love creating new intresting stuff and crafting seamless and
+            intuitive web designs that simplify user interaction. I am looking
+            to join a new team of creative designers and developer. If you think
+            we might be a good fit for one another than let's connect.
           </div>
         </div>
 
