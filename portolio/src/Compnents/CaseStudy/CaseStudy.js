@@ -73,19 +73,6 @@ const CaseStudy = () => {
                       </div>
                     );
                   })}
-
-                  {/* <div>
-                    <img
-                      className="case-study-img"
-                      src={require(`./images/${project.image}`)}
-                    ></img>
-                  </div>
-                  <div>
-                    <img
-                      className="case-study-img"
-                      src={require(`./images/${project.image}`)}
-                    ></img>
-                  </div> */}
                 </Carousel>
               </div>
             </div>

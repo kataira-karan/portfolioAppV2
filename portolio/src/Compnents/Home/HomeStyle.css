@@ -7,7 +7,8 @@
 .about-me-section{
     width: 50%;
     height: 100%;
-    color:wheat;
+
+    line-height: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,13 +36,17 @@
 .about-me{
     text-align: center;
     width: 70%;
+    font-family: var(--aboutMeFont);
+    color: var(--darkWhite);
+
 }
 
 .navigation-section{
     width: 50%;
     height: 100%;
     position: relative;
-    background-color:var(--primaryColor)    ;
+    background-color:var(--darkWhite)    ;
+    
 }
     
 
@@ -61,7 +66,34 @@
 .navigation-link{
     text-decoration: none;
     font-size: clamp(2rem , 3rem , 10vw);
+    font-weight: bold;
     margin-block: 2.5rem ;
+    cursor: pointer;
+    color: var(--primaryBlue);
+    font-family: var(--headerFont);
+    transition: 0.1s all cubic-bezier(0,1.17,.95,1.02);
+    
+}
+
+.navigation-link::after{
+    content: "";
+    width: 0;
+    height: 100%;
+    mix-blend-mode: difference;
+
+    
+}
+.navigation-link:hover::after{
+    content: "";
+    width: 70%;
+    transition: 0.3s all cubic-bezier(0,1.17,.95,1.02);
+    cursor: pointer;
+    position: absolute;
+    left: 40%;
+    z-index: -1;
+    opacity: 0.5;
+    background-color: var(--primaryGreen);
+
 }
 
 .top-nav{
