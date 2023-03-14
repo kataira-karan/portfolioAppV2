@@ -12,7 +12,7 @@ import karan1 from "./karan1.jpg";
 const Home = () => {
   let history = useHistory();
 
-  const navigateSite = (e) => {
+  const navigateSite = (e, page) => {
     const t = new Timeline();
     e.target.classList.remove("navigation-link");
     e.target.classList.add("navigation-link-active");
@@ -36,7 +36,7 @@ const Home = () => {
     e.target.classList.add("navigation-link");
 
     setTimeout(() => {
-      history.push("/home/projects");
+      history.push(`/home/${page}`);
     }, 3000);
   };
 
@@ -121,7 +121,7 @@ const Home = () => {
               {" "}
               <li className="navigation-link"> Blogs </li>
             </span>
-            <span onClick={(e) => navigateSite(e, "connect")}>
+            <span onClick={(e) => navigateSite(e, "contact")}>
               {" "}
               <li className="navigation-link"> Contact </li>
             </span>

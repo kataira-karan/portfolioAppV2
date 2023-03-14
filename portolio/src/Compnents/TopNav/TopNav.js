@@ -96,7 +96,7 @@ const TopNav = (props) => {
         </li>{" "}
         <li className="mobile-menu-link">
           {" "}
-          <Link to="/home/connect"> Contact </Link>
+          <Link to="/home/contact"> Contact </Link>
         </li>
         <li className="mobile-menu-link socials">
           <span> IG </span>

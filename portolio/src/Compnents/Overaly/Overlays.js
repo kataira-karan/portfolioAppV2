@@ -82,6 +82,8 @@ const Overlays = () => {
             </a>
           </div>
         </div>
+
+        <div className="bottom-overlay-image"></div>
       </div>
     </div>
   );
