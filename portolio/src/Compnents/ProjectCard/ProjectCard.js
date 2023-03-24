@@ -18,19 +18,24 @@ const ProjectCard = (props) => {
         >
           {" "}
         </Header>
-        <hr></hr>
-        <span className="project-technologies"> React | NodeJS </span>
-        <span>
+        <hr className="overlay-divider"></hr>
+        <span>{project.shortDescription}</span>
+        <br></br>
+        <Link className="case-study-link" to={`${projectName}/casestudy`}>
           {" "}
-          Code || Live ||{" "}
-          <Link to={`${projectName}/casestudy`}> Casestudy </Link>{" "}
-        </span>
+          Casestudy{" "}
+        </Link>{" "}
       </div>
       <div className="project-card-image-container">
         <img className="project-card-image" src={imgSrc}></img>
       </div>
 
-      <Header fontSize="1.2rem" fontWeight="bold" text={projectName}></Header>
+      <Header
+        fontSize="1.2rem"
+        fontWeight="bold"
+        textAlign="center"
+        text={projectName}
+      ></Header>
     </div>
   );
 };

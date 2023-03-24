@@ -38,7 +38,7 @@ const TopNav = (props) => {
         display: "flex",
         width: "20rem",
         ease: Power4.easeInOut,
-        height: "20rem",
+        height: "30rem",
         duration: 0.5,
       }).fromTo(
         ".mobile-menu-link",
@@ -75,9 +75,15 @@ const TopNav = (props) => {
       </span>
 
       {isMobile ? (
-        <GiHamburgerMenu onClick={openMobileMenu}></GiHamburgerMenu>
+        <GiHamburgerMenu
+          className="ham"
+          onClick={openMobileMenu}
+        ></GiHamburgerMenu>
       ) : (
-        <GiHamburgerMenu onClick={openDesktopNavigation}></GiHamburgerMenu>
+        <GiHamburgerMenu
+          className="ham"
+          onClick={openDesktopNavigation}
+        ></GiHamburgerMenu>
       )}
 
       <ul className="mobile-menu">
@@ -96,6 +102,10 @@ const TopNav = (props) => {
         </li>{" "}
         <li className="mobile-menu-link">
           {" "}
+          <Link to="/home/skills"> Outside Tech </Link>
+        </li>{" "}
+        <li className="mobile-menu-link">
+          {" "}
           <Link to="/home/contact"> Contact </Link>
         </li>
         <li className="mobile-menu-link socials">
@@ -104,6 +114,7 @@ const TopNav = (props) => {
           <span> GH </span>
         </li>
         <li className="mobile-menu-link">Karankatariac22@gmail.com</li>
+        <li className="resume">Download Resume</li>
       </ul>
     </div>
   );

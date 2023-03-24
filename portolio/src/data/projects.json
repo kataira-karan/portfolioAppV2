@@ -3,6 +3,7 @@
         {
             "id" : 1,
             "name": "Personalized Spotify",
+            "shortDescription" : "API and OAuth Integration",
             "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png",
             "images" : ["spotify.PNG" , "spotify.PNG" ,  "spotify.PNG"   ],
             "githubLink" : "https://github.com/kataira-karan/personalized_spotify",
@@ -12,6 +13,7 @@
         {
             "id" : 2,
             "name": "Ecom Marketplace",
+            "shortDescription" : "CURD Operations",
             "images" : ["mp1.png" , "mp2.png" ,"mp3.png","mp4.png"   ],
             "logo" : "https://www.pngitem.com/pimgs/m/529-5295750_facebook-marketplace-01-marketplace-facebook-logo-png-transparent.png",
             "githubLink" : "https://github.com/kataira-karan/marketplace",
@@ -21,10 +23,9 @@
         {
             "id" : 3,
             "name": "PortfolioV1.0",
-            "images" : ["spotify.PNG" , "spotify.PNG" ,  "spotify.PNG"   ],
-            "logo" : "https://cdn.dribbble.com/users/3912043/screenshots/16016566/media/2202673b9f11f904feaf0298ef5d67fd.jpg?compress=1&resize=400x300  ",
-            "githubLink" : "https://cdn.dribbble.com/users/3912043/screenshots/16016566/media/2202673b9f11f904feaf0298ef5d67fd.jpg?compress=1&resize=400x300",
-            "liveLink" : "",
+            "images" : ["pv1.PNG" , "pv2.PNG" ,  "pv3.PNG" , "pv4.PNG"   ],            "logo" : "https://cdn.dribbble.com/users/3912043/screenshots/16016566/media/2202673b9f11f904feaf0298ef5d67fd.jpg?compress=1&resize=400x300  ",
+            "githubLink" : "https://github.com/kataira-karan/karankataria.com",
+            "liveLink" : "https://karankataria-com.vercel.app/",
             "description" :  "API integration is an imperative part of any website design. The bigger the website the complex the logic behind API is. To learn more about this I created this web app with an integration of Spotify's Web API. I have also used it's Oauth System to give authorization to the user account. The authentication token is refresh every hour to secure the account. User can see playlist, top songs of last week,last month and last 6 months. User can see singer's details and also song's details. Check out songs in the singer's album. To build this web applicaiton I have used ReactJs And NodeJS. "
         },
         {
@@ -33,18 +34,28 @@
             "images" : ["spotify.PNG" , "spotify.PNG" ,  "spotify.PNG"   ],
             "logo" : "https://cdn.dribbble.com/users/3912043/screenshots/16016566/media/2202673b9f11f904feaf0298ef5d67fd.jpg?compress=1&resize=400x300",
             "githubLink" : "",
-            "liveLink" : "",
+            "liveLink" : "https://karankataria.vercel.app/",
             "description" :  "API integration is an imperative part of any website design. The bigger the website the complex the logic behind API is. To learn more about this I created this web app with an integration of Spotify's Web API. I have also used it's Oauth System to give authorization to the user account. The authentication token is refresh every hour to secure the account. User can see playlist, top songs of last week,last month and last 6 months. User can see singer's details and also song's details. Check out songs in the singer's album. To build this web applicaiton I have used ReactJs And NodeJS. "
         },{
 
             "id" : 5,
-            "name" : "Front End Mentor Challenge 1",
-            "image" : [],
-            "gitHubLink" :  "https://github.com/kataira-karan/frontendcodementor",
-            "liveLink" : "",
-            "description" : ""
-
-        }
+            "name" : "Front End Mentor Challenges", 
+            "shortDescription":"Small Fun Challenges",
+            "logo" : "https://media.licdn.com/dms/image/C4D0BAQG_rUOmQjzleQ/company-logo_200_200/0/1568560623067?e=2147483647&v=beta&t=-frY_KYziqHyiik2CvehGRG1KQ48elbkiDjIabOMjOQ",
+            "images" : ["fmc1.PNG" , "fmc2.PNG"],
+            "gitHubLink" :  "https://github.com/kataira-karan/marketplace",
+            "liveLink" : "https://frontendcodementor.vercel.app/",
+            "description" : "In my free time I love to do this front end mentor challanges to brush up my skills"
+        },{
+            "id": 6,
+            "name" : "GSAP Animation",
+            "shortDescription": "Creating Animation",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE0lpb3naInha6VyvdQRaidOVBntktDu7Zx-fRx0kQ-GcniDyRb4L-bdF8vxS6NlSOe9c&usqp=CAU",
+            "images" : ["fmc1.PNG" , "fmc2.PNG"],
+            "gitHubLink" :  "https://github.com/kataira-karan/gsap",
+            "liveLink" : "frontendcodementor.vercel.app",
+            "description" : "In my free time I love to do this front end mentor challanges to brush up my skills"
+         }
 
 
     ]

@@ -22,14 +22,27 @@
     transition: 0.5s all cubic-bezier(.17,.67,.63,.99);
 }
 
+.case-study-link{
+    padding:0.8rem 1rem ;
+    background-color: black;
+    margin-top: 0.1rem;
+    color: var(--primaryGreen);
+    border-radius: 10px;
+}
+
+.overlay-divider{
+    width: 100%;
+}
+
 .project-card:hover{
 
 
 }
 
 .project-card-overlay{
-    display: hidden;
+    display: flex;
     padding:2rem;
+
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;

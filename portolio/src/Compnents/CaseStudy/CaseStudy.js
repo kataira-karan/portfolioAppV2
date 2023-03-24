@@ -1,15 +1,17 @@
 import { React, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useHistory, useLocation, useParams } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 import ComingSoon from "../ComingSoon/ComingSoon";
 import TopNav from "../TopNav/TopNav";
+
 import "./CaseStudyStyle.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import { useHistory, useLocation, useParams } from "react-router-dom";
 import Header from "../Header/Header";
 import { VscLiveShare } from "react-icons/vsc";
 import { GoMarkGithub } from "react-icons/go";
 import projects from "../../data/projects.json";
-import { Link } from "react-router-dom";
 
 const CaseStudy = () => {
   const [project, setproject] = useState(null);
@@ -19,12 +21,9 @@ const CaseStudy = () => {
 
   useEffect(() => {
     let currentProject = projects.filter((project) => {
-      console.log(project);
       return project.name === params.projectName;
     });
     setproject(currentProject[0]);
-    console.log(currentProject);
-    console.log(project);
   }, []);
 
   return (
@@ -43,18 +42,15 @@ const CaseStudy = () => {
                   fontWeight="bold"
                 ></Header>
                 <div className="project-links">
-                  {/* <span className="project-techs"> React || Node || Mongo </span> */}
-
-                  <span>
-                    {" "}
-                    <a target="_blank" href={project.githubLink}>
-                      <GoMarkGithub className="project-link"></GoMarkGithub>{" "}
+                  {/* <span className="project-techs"> React || Node || Mongo </span> */}{" "}
+                  <a target="_blank" href={project.githubLink}>
+                    <GoMarkGithub className="project-link"></GoMarkGithub>{" "}
+                  </a>
+                  {project.liveLink ? (
+                    <a href={project.liveLink}>
+                      <VscLiveShare className="project-link"></VscLiveShare>
                     </a>
-                  </span>
-                  <span>
-                    {" "}
-                    <VscLiveShare className="project-link"> </VscLiveShare>{" "}
-                  </span>
+                  ) : null}
                 </div>
               </div>
               <div className="case-study-carousel">

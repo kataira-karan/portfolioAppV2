@@ -53,10 +53,58 @@
     box-shadow: 3px 3px 3px gray;
 }
 
+.resume{
+    background-color: black;
+    padding:1rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.resume:hover{
+    padding:1.2rem 1.2rem;
+    font-size: 1.2rem;
+}
+
 .mobile-menu-link{
     margin : 0.6rem 0 ;
     letter-spacing: 0.1rem;
+    transition: all 0.3s ease;
 }
+
+.close-button{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+ 
+}
+.close-button:hover{
+    transition: 0.5s ease;
+    transform: rotate(360deg) scale(1.2);
+}
+
+.ham{
+    font-size: 2rem;
+    font-weight: bold;
+    color:black;
+    cursor: pointer;
+}
+
+.mobile-menu-link:hover::after{
+    content: "";
+    background-color: hsl(0, 0%, 0%,0.5);
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    left: 80%;
+    top:0;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
 .mobile-menu-link a{
     color: #ACC874;
     font-family: 'Courgette', cursive;
