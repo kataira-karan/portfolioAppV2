@@ -88,10 +88,10 @@ const TopNav = (props) => {
 
       <ul className="mobile-menu">
         <GrClose className="close-button" onClick={closeMobileMenu}></GrClose>
-        <li className="mobile-menu-link">
+        {/* <li className="mobile-menu-link">
           {" "}
           <Link to="/home/aboutme"> About Me </Link>
-        </li>
+        </li> */}
         <li className="mobile-menu-link">
           {" "}
           <Link to="/home/projects"> Projects </Link>
@@ -102,7 +102,7 @@ const TopNav = (props) => {
         </li>{" "}
         <li className="mobile-menu-link">
           {" "}
-          <Link to="/home/skills"> Outside Tech </Link>
+          <Link to="/home/outsidetech"> Outside Tech </Link>
         </li>{" "}
         <li className="mobile-menu-link">
           {" "}

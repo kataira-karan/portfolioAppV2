@@ -105,10 +105,10 @@ const Home = () => {
           </span>
 
           <ul className="navigation">
-            <span onClick={(e) => navigateSite(e, "aboutme")}>
+            {/* <span onClick={(e) => navigateSite(e, "home")}>
               {" "}
               <li className="navigation-link"> About Me </li>{" "}
-            </span>
+            </span> */}
             <span onClick={(e) => navigateSite(e, "projects")}>
               {" "}
               <li className="navigation-link"> Projects </li>
@@ -117,10 +117,10 @@ const Home = () => {
               {" "}
               <li className="navigation-link"> Skills </li>
             </span>
-            <span onClick={(e) => navigateSite(e, "blogs")}>
+            {/* <span onClick={(e) => navigateSite(e, "blogs")}>
               {" "}
-              <li className="navigation-link"> Blogs </li>
-            </span>
+              <li className="navigation-link"> OutsideTech </li>
+            </span> */}
             <span onClick={(e) => navigateSite(e, "contact")}>
               {" "}
               <li className="navigation-link"> Contact </li>

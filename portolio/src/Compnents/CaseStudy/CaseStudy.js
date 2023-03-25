@@ -47,7 +47,7 @@ const CaseStudy = () => {
                     <GoMarkGithub className="project-link"></GoMarkGithub>{" "}
                   </a>
                   {project.liveLink ? (
-                    <a href={project.liveLink}>
+                    <a href={project.liveLink} target="_blank">
                       <VscLiveShare className="project-link"></VscLiveShare>
                     </a>
                   ) : null}

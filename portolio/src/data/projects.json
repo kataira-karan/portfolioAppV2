@@ -7,7 +7,7 @@
             "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png",
             "images" : ["spotify.PNG" , "spotify.PNG" ,  "spotify.PNG"   ],
             "githubLink" : "https://github.com/kataira-karan/personalized_spotify",
-            "liveLink" : "https://github.com/kataira-karan/personalized_spotify",
+            "liveLink" : "",
             "description" :  "API integration is an imperative part of any website design. The bigger the website the complex the logic behind API is. To learn more about this I created this web app with an integration of Spotify's Web API. I have also used it's Oauth System to give authorization to the user account. The authentication token is refresh every hour to secure the account. User can see playlist, top songs of last week,last month and last 6 months. User can see singer's details and also song's details. Check out songs in the singer's album. To build this web applicaiton I have used ReactJs And NodeJS. "
         },
         {
@@ -18,24 +18,25 @@
             "logo" : "https://www.pngitem.com/pimgs/m/529-5295750_facebook-marketplace-01-marketplace-facebook-logo-png-transparent.png",
             "githubLink" : "https://github.com/kataira-karan/marketplace",
             "liveLink" : "",
-            "description" :  "API integration is an imperative part of any website design. The bigger the website the complex the logic behind API is. To learn more about this I created this web app with an integration of Spotify's Web API. I have also used it's Oauth System to give authorization to the user account. The authentication token is refresh every hour to secure the account. User can see playlist, top songs of last week,last month and last 6 months. User can see singer's details and also song's details. Check out songs in the singer's album. To build this web applicaiton I have used ReactJs And NodeJS. "
+            "description" :  "I made this web application for a clinet. The flow of the website is like, User can login/Signup in the website. Now user can see all the listed products for sell from the other users. User can be a buyer or a seller. To sell any product user can list a product where user can add a product with detail information. It will be listed for other users to purchase. As a buyers prespective a user can send a message to the seller about the product and have a conversation. User can send an offer to buyer with desired price. I have integrated STRIP API for payment. This is a full stack project made using MERN stack  "
         },
         {
             "id" : 3,
             "name": "PortfolioV1.0",
-            "images" : ["pv1.PNG" , "pv2.PNG" ,  "pv3.PNG" , "pv4.PNG"   ],            "logo" : "https://cdn.dribbble.com/users/3912043/screenshots/16016566/media/2202673b9f11f904feaf0298ef5d67fd.jpg?compress=1&resize=400x300  ",
+            "images" : ["pv1.PNG" , "pv2.PNG" ,  "pv3.PNG" , "pv4.PNG"   ],        
+            "logo" : "https://cdn.dribbble.com/users/3912043/screenshots/16016566/media/2202673b9f11f904feaf0298ef5d67fd.jpg?compress=1&resize=400x300  ",
             "githubLink" : "https://github.com/kataira-karan/karankataria.com",
             "liveLink" : "https://karankataria-com.vercel.app/",
-            "description" :  "API integration is an imperative part of any website design. The bigger the website the complex the logic behind API is. To learn more about this I created this web app with an integration of Spotify's Web API. I have also used it's Oauth System to give authorization to the user account. The authentication token is refresh every hour to secure the account. User can see playlist, top songs of last week,last month and last 6 months. User can see singer's details and also song's details. Check out songs in the singer's album. To build this web applicaiton I have used ReactJs And NodeJS. "
+            "description" :  "This was my first attempt to build somthing like a portfolio website. It's incompete as I started working on other project. I will be completing it soon."
         },
         {
             "id" : 4,
             "name": "PortfolioV2.0",
-            "images" : ["spotify.PNG" , "spotify.PNG" ,  "spotify.PNG"   ],
+            "images" : ["pv21.PNG" , "pv22.PNG" , "pv23.PNG","pv24.PNG"   ],
             "logo" : "https://cdn.dribbble.com/users/3912043/screenshots/16016566/media/2202673b9f11f904feaf0298ef5d67fd.jpg?compress=1&resize=400x300",
-            "githubLink" : "",
+            "githubLink" : "https://github.com/kataira-karan/portfolioAppV2",
             "liveLink" : "https://karankataria.vercel.app/",
-            "description" :  "API integration is an imperative part of any website design. The bigger the website the complex the logic behind API is. To learn more about this I created this web app with an integration of Spotify's Web API. I have also used it's Oauth System to give authorization to the user account. The authentication token is refresh every hour to secure the account. User can see playlist, top songs of last week,last month and last 6 months. User can see singer's details and also song's details. Check out songs in the singer's album. To build this web applicaiton I have used ReactJs And NodeJS. "
+            "description" :  "This is my latest version of portfolio app. It is made using react. And I am using GSAP for animation."
         },{
 
             "id" : 5,
@@ -54,7 +55,7 @@
             "images" : ["fmc1.PNG" , "fmc2.PNG"],
             "gitHubLink" :  "https://github.com/kataira-karan/gsap",
             "liveLink" : "frontendcodementor.vercel.app",
-            "description" : "In my free time I love to do this front end mentor challanges to brush up my skills"
+            "description" : "I am learing GSAP to animate my web application. GSAP is a robust JavaScript toolset that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects anything JavaScript can touch"
          }
 
 
